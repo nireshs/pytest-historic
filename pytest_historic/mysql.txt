@@ -1,0 +1,5 @@
+show databases;
+use stability;
+show tables;
+Create table tb_project ( Project_Id INT NOT NULL AUTO_INCREMENT primary key, Project_Name TEXT, Project_Desc TEXT, Project_Image TEXT, Created_Date DATETIME, Last_Updated DATETIME, Total_Executions INT, Recent_Pass_Perc FLOAT, Overall_Pass_Perc FLOAT);
+SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
