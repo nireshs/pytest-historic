@@ -1,0 +1,19 @@
+{
+    "folders": [],
+    "settings": {},
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+    },
+    "pylint.args": [
+        "--disable=C0111"
+    ],
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 79,
+    "python.formatting.provider": "none"
+}
