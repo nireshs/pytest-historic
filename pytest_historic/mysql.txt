@@ -1,5 +1,31 @@
+
 show databases;
-use stability;
+use tr69_functional;
+
+drop table IF EXISTS params_ref;
+CREATE TABLE IF NOT EXISTS params_ref (
+	id int NOT NULL AUTO_INCREMENT,
+	model VARCHAR(256) NOT NULL,
+	static VARCHAR(50),
+	val_ref  VARCHAR(256),
+	PRIMARY KEY (id, model)
+);
+
+use tr69_functional;
+drop table IF EXISTS params_act;
+CREATE TABLE IF NOT EXISTS params_act (
+	id int NOT NULL AUTO_INCREMENT,
+	model VARCHAR(256) NOT NULL,
+	static VARCHAR(50),
+	val_act  VARCHAR(200) NOT NULL,
+	project  VARCHAR(200) NOT NULL,
+	android  VARCHAR(200) NOT NULL,
+	version  VARCHAR(200) NOT NULL,
+	date  VARCHAR(200) NOT NULL,
+	PRIMARY KEY (id, model, project, android)
+);
+show databases;
+use tr69_functional;
 show tables;
-Create table tb_project ( Project_Id INT NOT NULL AUTO_INCREMENT primary key, Project_Name TEXT, Project_Desc TEXT, Project_Image TEXT, Created_Date DATETIME, Last_Updated DATETIME, Total_Executions INT, Recent_Pass_Perc FLOAT, Overall_Pass_Perc FLOAT);
-SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+# select * from params_ref;
+select * from params_act;
