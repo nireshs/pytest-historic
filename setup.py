@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
       name='pytest-historic',
-      version="0.1.2",
+      version="2.1.0",
       description='Custom report to display pytest historical execution records',
       long_description='Pytest Historic is custom report to display historical execution records using MySQL + Flask',
       classifiers=[
@@ -11,9 +11,9 @@ setup(
           'Topic :: Software Development :: Testing',
       ],
       keywords='pytest historical execution report',
-      author='Shiva Prasad Adirala',
-      author_email='adiralashiva8@gmail.com',
-      url='https://github.com/adiralashiva8/pytest-historic',
+      author='Niresh Shanmugam',
+      author_email='niresh.shanmugam@gmail.com',
+      url='https://github.com/nireshs/pytest-historic',
       license='MIT',
 
       packages=find_packages(),
